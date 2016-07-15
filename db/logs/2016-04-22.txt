@@ -1,0 +1,47 @@
+Time : 06:49:03
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'date = ?, detail = ? WHERE iid = ?' at line 1
+Raw SQL : UPDATE imports SET amount = :amount,price = :price date = :date, detail = :detail WHERE iid = :iid
+
+Time : 06:47:35
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : UPDATE imports SET amount = :amount, date = :date, detail = :detail WHERE iid = :iid
+
+Time : 10:30:40
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'stock.importan' doesn't exist
+Raw SQL : SELECT pid FROM importan WHERE iid = :aa
+
+Time : 10:30:21
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'stock.importan' doesn't exist
+Raw SQL : SELECT pid FROM importan WHERE iid = :aa
+
+Time : 10:28:49
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'stock.importan' doesn't exist
+Raw SQL : SELECT name, type from product where pid = (SELECT pid FROM importan WHERE iid = :aa)
+
+Time : 10:27:20
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'stock.importan' doesn't exist
+Raw SQL : SELECT name, type from product where pid = (SELECT pid FROM importan WHERE iid = :iid)
+
+Time : 04:52:49
+SQLSTATE[HY000]: General error: 2031 
+Raw SQL : select pid from product where name = :aa
+
+Time : 04:52:37
+SQLSTATE[HY000]: General error: 2031 
+Raw SQL : select pid from product where name = :aa
+
+Time : 04:50:53
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'زيبا' at line 1
+Raw SQL : select pid from product where name = برنج زيبا
+
+Time : 04:48:35
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+Raw SQL : select pid from product where name =
+
+Time : 01:46:59
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'distincte' in 'field list'
+Raw SQL : select distincte name from product
+
+Time : 00:20:56
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ': a' at line 1
+Raw SQL : select * from product where pid =: a

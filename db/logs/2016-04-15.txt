@@ -1,0 +1,59 @@
+Time : 20:33:37
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'personal' cannot be null
+Raw SQL : INSERT INTO Expenses (boo,Price,Personal) VALUES (:boo,:Price,:Personal)
+
+Time : 20:32:03
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'personal' cannot be null
+Raw SQL : INSERT INTO Expenses (boo,Price,Personal) VALUES (:boo,:Price,:Personal)
+
+Time : 20:30:45
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'personal' cannot be null
+Raw SQL : INSERT INTO Expenses (boo,Price,Personal) VALUES (:boo,:Price,:Personal)
+
+Time : 19:23:11
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'personal' cannot be null
+Raw SQL : INSERT INTO Expenses (boo,Price,Personal) VALUES (:boo,:Price,:Personal)
+
+Time : 19:17:46
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'personal' cannot be null
+Raw SQL : INSERT INTO Expenses (boo,Price,Personal) VALUES (:boo,:Price,:Personal)
+
+Time : 19:17:13
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'personal' cannot be null
+Raw SQL : INSERT INTO Expenses (boo,Price,Personal) VALUES (:boo,:Price,:Personal)
+
+Time : 19:14:55
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'for,Price) VALUES (?,?)' at line 1
+Raw SQL : INSERT INTO Expenses (for,Price) VALUES (:for,:Price)
+
+Time : 19:14:15
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'for,Price,Personal) VALUES (?,?,?)' at line 1
+Raw SQL : INSERT INTO Expenses (for,Price,Personal) VALUES (:for,:Price,:Personal)
+
+Time : 19:13:41
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'for,Price,Personal) VALUES (?,?,?)' at line 1
+Raw SQL : INSERT INTO Expenses (for,Price,Personal) VALUES (:for,:Price,:Personal)
+
+Time : 19:12:30
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'for,Price,Personal) VALUES (?,?,?)' at line 1
+Raw SQL : INSERT INTO product (for,Price,Personal) VALUES (:for,:Price,:Personal)
+
+Time : 18:45:40
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null
+Raw SQL : INSERT INTO product (name,type,Price,detail) VALUES (:name,:type,:Price,:detail)
+
+Time : 18:45:15
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'phone' in 'field list'
+Raw SQL : INSERT INTO product (name,type,Price,phone,detail) VALUES (:name,:type,:Price,:phone,:detail)
+
+Time : 18:44:56
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'phone' in 'field list'
+Raw SQL : INSERT INTO product (name,type,Price,phone,detail) VALUES (:name,:type,:Price,:phone,:detail)
+
+Time : 11:39:52
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'address' cannot be null
+Raw SQL : INSERT INTO custemrs (name,nighberhood,address,phone,detail) VALUES (:name,:nighberhood,:address,:phone,:detail)
+
+Time : 10:48:38
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'phone' cannot be null
+Raw SQL : INSERT INTO custemrs (name,nighberhood,address,phone,detail) VALUES (:name,:nighberhood,:address,:phone,:detail)

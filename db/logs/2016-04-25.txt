@@ -1,0 +1,7 @@
+Time : 05:56:38
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.date' in 'where clause'
+Raw SQL : select count(cid) cid from custemrs WHERE t.date >= ( CURDATE() - INTERVAL 3 DAY )
+
+Time : 05:26:48
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'bprice' in 'field list'
+Raw SQL : select sum(bprice) bprice from imports

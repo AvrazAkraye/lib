@@ -1,0 +1,23 @@
+Time : 14:25:43
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'datee' in 'field list'
+Raw SQL : INSERT INTO dept (cid,price,detail,datee) VALUES (:cid,:price,:detail,:datee)
+
+Time : 14:22:57
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'datee' in 'field list'
+Raw SQL : INSERT INTO dept (cid,price,detail,datee) VALUES (:cid,:price,:detail,:datee)
+
+Time : 14:22:23
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'datee' in 'field list'
+Raw SQL : INSERT INTO dept (cid,price,detail,datee) VALUES (:cid,:price,:detail,:datee)
+
+Time : 14:18:15
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'datee' in 'field list'
+Raw SQL : INSERT INTO dept (cid,price,datee,detail) VALUES (:cid,:price,:datee,:detail)
+
+Time : 14:04:55
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'stock.customers' doesn't exist
+Raw SQL : SELECT * FROM customers
+
+Time : 14:04:37
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'stock.persons' doesn't exist
+Raw SQL : SELECT * FROM Persons

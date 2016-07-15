@@ -1,0 +1,51 @@
+Time : 05:19:58
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'detail' cannot be null
+Raw SQL : INSERT INTO Imports (amount,pid,price,date,detail,username) VALUES (:amount,:pid,:price,:date,:detail,:username)
+
+Time : 02:18:47
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'price) from imports where iid= ?' at line 1
+Raw SQL : select max(amount,price) from imports where iid= :a
+
+Time : 01:26:48
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'برنج زيبا-صغير' for key 'ptoduct2cloumnunique'
+Raw SQL : INSERT INTO product (name,type,price,bprice,detail,username) VALUES (:name,:type,:price,:bprice,:detail,:username)
+
+Time : 01:26:22
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'برنج زيبا-صغير' for key 'ptoduct2cloumnunique'
+Raw SQL : INSERT INTO product (name,type,price,bprice,detail,username) VALUES (:name,:type,:price,:bprice,:detail,:username)
+
+Time : 01:25:37
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'برنج زيبا-صغير' for key 'ptoduct2cloumnunique'
+Raw SQL : INSERT INTO product (name,type,price,bprice,detail,username) VALUES (:name,:type,:price,:bprice,:detail,:username)
+
+Time : 01:01:24
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'برنج زيبا-كبير' for key 'ptoduct2cloumnunique'
+Raw SQL : INSERT INTO product (name,type,price,bprice,detail,username) VALUES (:name,:type,:price,:bprice,:detail,:username)
+
+Time : 01:01:05
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'برنج زيبا-صغير' for key 'ptoduct2cloumnunique'
+Raw SQL : INSERT INTO product (name,type,price,bprice,detail,username) VALUES (:name,:type,:price,:bprice,:detail,:username)
+
+Time : 01:00:32
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'برنج زيبا-صغير' for key 'ptoduct2cloumnunique'
+Raw SQL : INSERT INTO product (name,type,price,bprice,detail,username) VALUES (:name,:type,:price,:bprice,:detail,:username)
+
+Time : 01:00:19
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'برنج زيبا-صغير' for key 'ptoduct2cloumnunique'
+Raw SQL : INSERT INTO product (name,type,price,bprice,detail,username) VALUES (:name,:type,:price,:bprice,:detail,:username)
+
+Time : 01:00:06
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'برنج زيبا-صغير' for key 'ptoduct2cloumnunique'
+Raw SQL : INSERT INTO product (name,type,price,bprice,detail,username) VALUES (:name,:type,:price,:bprice,:detail,:username)
+
+Time : 00:59:34
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'برنج زيبا-صغير' for key 'ptoduct2cloumnunique'
+Raw SQL : INSERT INTO product (name,type,price,bprice,detail,username) VALUES (:name,:type,:price,:bprice,:detail,:username)
+
+Time : 00:58:36
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'برنج زيبا-صغير' for key 'ptoduct2cloumnunique'
+Raw SQL : INSERT INTO product (name,type,price,bprice,detail,username) VALUES (:name,:type,:price,:bprice,:detail,:username)
+
+Time : 00:49:23
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'برنج زيبا-صغير' for key 'ptoduct2cloumnunique'
+Raw SQL : INSERT INTO product (name,type,price,bprice,detail,username) VALUES (:name,:type,:price,:bprice,:detail,:username)

@@ -1,0 +1,11 @@
+Time : 08:38:55
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'nighberhood' cannot be null
+Raw SQL : INSERT INTO custemrs (name,nighberhood,address,phone,detail) VALUES (:name,:nighberhood,:address,:phone,:detail)
+
+Time : 08:38:05
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'nighberhood' cannot be null
+Raw SQL : INSERT INTO custemrs (name,nighberhood,address,phone,detail) VALUES (:name,:nighberhood,:address,:phone,:detail)
+
+Time : 08:37:41
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'nighberhood' cannot be null
+Raw SQL : INSERT INTO custemrs (name,nighberhood,address,phone,detail) VALUES (:name,:nighberhood,:address,:phone,:detail)

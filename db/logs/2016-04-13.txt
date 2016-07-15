@@ -1,0 +1,11 @@
+Time : 18:33:29
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Raw SQL : INSERT INTO user (id,password) VALUES (:id,:password)
+
+Time : 18:33:27
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Raw SQL : INSERT INTO user (id,password) VALUES (:id,:password)
+
+Time : 18:33:13
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Raw SQL : INSERT INTO user (id,password) VALUES (:id,:password)

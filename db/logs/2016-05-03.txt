@@ -1,0 +1,47 @@
+Time : 15:46:05
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'dept.state' in 'field list'
+Raw SQL : select did,custemrs.name,dept.state,custemrs.phone,dept.date,dept.price,dept.detail,dept.username from dept, custemrs where custemrs.cid=dept.cid AND custemrs.name like '%ffb%'
+
+Time : 13:47:32
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'dept.state' in 'field list'
+Raw SQL : select did,custemrs.name,dept.state,custemrs.phone,dept.date,dept.price,dept.detail,dept.username from dept, custemrs where custemrs.cid=dept.cid;
+
+Time : 10:00:09
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'alan' in 'where clause'
+Raw SQL : select password from user WHERE username = alan
+
+Time : 10:00:08
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'alan' in 'where clause'
+Raw SQL : select password from user WHERE username = alan
+
+Time : 09:59:59
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'alan' in 'where clause'
+Raw SQL : select password from user WHERE username = alan
+
+Time : 09:59:58
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'alan' in 'where clause'
+Raw SQL : select password from user WHERE username = alan
+
+Time : 09:59:06
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'alan' in 'where clause'
+Raw SQL : select password from user WHERE username = alan
+
+Time : 09:59:00
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'alan' in 'where clause'
+Raw SQL : select password from user WHERE username = alan
+
+Time : 09:58:44
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'alan' in 'where clause'
+Raw SQL : select password from user WHERE username = alan
+
+Time : 09:58:37
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'alan' in 'where clause'
+Raw SQL : select password pp from user WHERE username = alan
+
+Time : 09:58:01
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'alan' in 'where clause'
+Raw SQL : select password pp from user WHERE username = alan
+
+Time : 02:18:59
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : UPDATE imports SET price = :pr WHERE pid = :pid

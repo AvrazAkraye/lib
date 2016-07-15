@@ -1,0 +1,7 @@
+Time : 17:30:17
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'cname' in 'where clause'
+Raw SQL : select * from custemrs WHERE cname like '%avraz%'
+
+Time : 14:52:09
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%avraz%' at line 1
+Raw SQL : select orders.oid,custemrs.name cname,custemrs.phone cphone,custemrs.nighberhood,custemrs.address,product.name pname,product.type,product.price pprice,orders.amount oamount,imports.amount iamount,orders.price oprice,orders.mstalam,orders.detail,orders.username,orders.date from product,custemrs,imports,orders WHERE orders.cid = custemrs.cid AND orders.iid = imports.iid and imports.pid = product.pid AND custemrs.name like %avraz%

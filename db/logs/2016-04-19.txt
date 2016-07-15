@@ -1,0 +1,110 @@
+Time : 18:45:43
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'personal' cannot be null
+Raw SQL : INSERT INTO Expenses (personal,boo,price,detail,date,username) VALUES (:personal,:boo,:price,:detail,:date,:username)
+
+Time : 18:43:02
+SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'personal' specified twice
+Raw SQL : INSERT INTO Expenses (personal,boo,price,Personal,detail,date,username) VALUES (:personal,:boo,:price,:Personal,:detail,:date,:username)
+
+Time : 18:42:28
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'personal' cannot be null
+Raw SQL : INSERT INTO Expenses (Personal,boo,price,detail,date,username) VALUES (:Personal,:boo,:price,:detail,:date,:username)
+
+Time : 18:42:20
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'personal' cannot be null
+Raw SQL : INSERT INTO Expenses (Personal,boo,price,detail,date,username) VALUES (:Personal,:boo,:price,:detail,:date,:username)
+
+Time : 18:39:53
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'personal' cannot be null
+Raw SQL : INSERT INTO Expenses (boo,price,Personal,detail,date,username) VALUES (:boo,:price,:Personal,:detail,:date,:username)
+
+Time : 18:34:52
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'username' cannot be null
+Raw SQL : INSERT INTO Expenses (boo,price,detail,date,username) VALUES (:boo,:price,:detail,:date,:username)
+
+Time : 18:34:49
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'username' cannot be null
+Raw SQL : INSERT INTO Expenses (boo,price,detail,date,username) VALUES (:boo,:price,:detail,:date,:username)
+
+Time : 18:34:31
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'username' cannot be null
+Raw SQL : INSERT INTO Expenses (boo,price,detail,date,username) VALUES (:boo,:price,:detail,:date,:username)
+
+Time : 16:29:37
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : UPDATE product SET name = :name WHERE pid = :pid
+
+Time : 16:27:05
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : UPDATE product SET name = :name WHERE pid = :pid
+
+Time : 16:26:34
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : UPDATE product SET name = :name WHERE pid = :pid
+
+Time : 16:26:16
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : UPDATE product SET name = :name, type = :type  WHERE pid = :pid
+
+Time : 16:26:04
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : UPDATE product SET name = :name, type = :type  WHERE pid = :pid
+
+Time : 16:25:15
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : UPDATE product SET name = :name, type = :type  WHERE pid = :pid
+
+Time : 16:06:47
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'username' cannot be null
+Raw SQL : INSERT INTO product (name,type,price,detail,date,username) VALUES (:name,:type,:price,:detail,:date,:username)
+
+Time : 15:03:24
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nighberhood' in 'field list'
+Raw SQL : INSERT INTO product (name,nighberhood,address,phone,detail,date,username) VALUES (:name,:nighberhood,:address,:phone,:detail,:date,:username)
+
+Time : 02:04:39
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : UPDATE custemrs SET name = :name 
+        AND nighberhood = :nighberhood 
+        AND address = :address 
+        AND date = :date 
+        AND phone = :phone 
+        AND detail = :detail 
+        WHERE cid = :id
+
+Time : 02:04:28
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : UPDATE custemrs SET name = :name 
+        AND nighberhood = :nighberhood 
+        AND address = :address 
+        AND date = :date 
+        AND phone = :phone 
+        AND detail = :detail 
+        WHERE cid = :id
+
+Time : 02:04:05
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : UPDATE custemrs SET name = :name 
+        AND nighberhood = :nighberhood 
+        AND address = :address 
+        AND date = :date 
+        AND phone = :phone 
+        AND detail = :detail 
+ 
+         WHERE cid = :id
+
+Time : 01:55:59
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : UPDATE custemrs SET name = :name AND nighberhood= :nighberhood WHERE cid = :id
+
+Time : 01:55:37
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : UPDATE custemrs SET name = :name AND nighberhood= :nighberhood WHERE cid = :id
+
+Time : 01:55:13
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : UPDATE custemrs SET name = :f AND nighberhood= :n WHERE cid = :id
+
+Time : 01:47:46
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : UPDATE custemrs SET name = 'avrazsss' WHERE cid = :id

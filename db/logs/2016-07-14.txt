@@ -1,0 +1,15 @@
+Time : 12:33:43
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'lib.user' doesn't exist
+Raw SQL : select count(id) id from user
+
+Time : 12:29:04
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'lib.custemrs' doesn't exist
+Raw SQL : SELECT * FROM custemrs
+
+Time : 12:29:02
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'lib.product' doesn't exist
+Raw SQL : select  orders.random,orders.oid,custemrs.name cname,custemrs.phone cphone,custemrs.nighberhood,custemrs.address,product.name pname,product.type,product.price pprice,orders.amount oamount,imports.amount iamount,orders.price oprice,orders.mstalam,orders.detail,orders.username,orders.date from product,custemrs,imports,orders WHERE orders.cid = custemrs.cid AND orders.iid = imports.iid and imports.pid = product.pid
+
+Time : 09:42:39
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'lib.user' doesn't exist
+Raw SQL : SELECT * FROM user
