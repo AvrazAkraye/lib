@@ -1,6 +1,21 @@
 
 <?php
+
+
 require("include/header.php");
+
+require("db/Db.class.php");
+
+$db = new DB();
+  $countOfBook = $db->query("SELECT count(*) from `info` limit 1");
+  /*$countOfBooks = $db->query("SELECT count(*) as 'book'FROM  `info`,  `section`, `class`,  `dptmt` WHERE info.`sec-id` = section.`sec-id` AND `section` `class-id` = `class`.`class-id` AND `class`.`dep-id` = `dptmt`.`dep-id` AND `dptmt`.`dep-id` = 1");   */
+
+  if(isset($countOfBook)){
+    $countOfBookInt = $countOfBook[0]["count(*)"];
+  }else{
+      $countOfBookInt = 0;
+  }
+
 ?>
 <!-- START CONTENT -->
 <div class="content">
@@ -37,7 +52,7 @@ require("include/header.php");
     <li class="arrow"></li>
     <li class="col-xs-6 col-lg-2">
       <span class="title"><i class="fa fa-dot-circle-o"></i> Today Profit</span>
-      <h3>$36.45</h3>
+      <h3><?=$countOfBookInt; ?></h3>
       <span class="diff"><b class="color-down"><i class="fa fa-caret-down"></i> 26%</b> from yesterday</span>
     </li>
     <li class="col-xs-6 col-lg-2">

@@ -1,0 +1,7 @@
+Time : 20:27:37
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`class-id` = `class`.`class-id` AND `class`.`dep-id` = `dptmt`.`dep-id` AND `dpt' at line 1
+Raw SQL : SELECT count(*) as 'book'FROM  `info`,  `section`, `class`,  `dptmt` WHERE info.`sec-id` = section.`sec-id` AND `section` `class-id` = `class`.`class-id` AND `class`.`dep-id` = `dptmt`.`dep-id` AND `dptmt`.`dep-id` = 1
+
+Time : 20:14:53
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'infp.info-id' in 'field list'
+Raw SQL : SELECT count(`infp`.`info-id`) from `info` limit 1

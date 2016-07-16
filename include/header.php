@@ -1,3 +1,13 @@
+<!--<?php
+if(!isset($_SESSION["favcolor"])){
+echo "ok";
+}else{
+  header("LOCATION: login.php");
+  exit;
+}
+
+?>
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -102,9 +112,9 @@
 
 <ul class="sidebar-panel nav">
   <li class="sidetitle">MAIN</li>
-  <li><a href="index.php"><span class="icon color5"><i class="fa fa-home"></i></span>Dashboard<span class="label label-default">2</span></a></li>
-  <li><a href="mailbox.php"><span class="icon color6"><i class="fa fa-envelope-o"></i></span>Mailbox<span class="label label-default">19</span></a></li>
-  <li><a href="#"><span class="icon color7"><i class="fa fa-flask"></i></span>UI Elements<span class="caret"></span></a>
+  <li><a href="index.php"><span class="icon color5-bg"><i class="fa fa-home"></i></span>الرئيسية<span class="label label-default">2</span></a></li>
+  <li><a href="mailbox.php"><span class="icon color6-bg"><i class="fa fa-envelope-o"></i></span>المكتبة<span class="label label-default">19</span></a></li>
+  <li><a href="#"><span class="icon color7-bg"><i class="fa fa-flask"></i></span>UI Elements<span class="caret"></span></a>
     <ul>
       <li><a href="icons.php">Icons</a></li>
       <li><a href="tabs.php">Tabs</a></li>
@@ -116,24 +126,24 @@
       <li><a href="others.php">Others<span class="label label-danger">NEW</span></a></li>
     </ul>
   </li>
-  <li><a href="charts.php"><span class="icon color8"><i class="fa fa-bar-chart"></i></span>Charts</a></li>
-  <li><a href="#"><span class="icon color9"><i class="fa fa-th"></i></span>Tables<span class="caret"></span></a>
+  <li><a href="charts.php"><span class="icon color8-bg"><i class="fa fa-bar-chart"></i></span>الرسومات</a></li>
+  <li><a href="#"><span class="icon color9-bg"><i class="fa fa-th"></i></span>الجداول<span class="caret"></span></a>
     <ul>
       <li><a href="basic-table.php">Basic Tables</a></li>
       <li><a href="data-table.php">Data Tables</a></li>
     </ul>
   </li>
-  <li><a href="#"><span class="icon color10"><i class="fa fa-check-square-o"></i></span>Forms<span class="caret"></span></a>
+  <li><a href="#"><span class="icon color10-bg"><i class="fa fa-check-square-o"></i></span>النماذج<span class="caret"></span></a>
     <ul>
       <li><a href="form-elements.php">Form Elements</a></li>
       <li><a href="layouts.php">Form Layouts</a></li>
       <li><a href="text-editors.php">Text Editors</a></li>
     </ul>
   </li>
-  <li><a href="widgets.php"><span class="icon color11"><i class="fa fa-diamond"></i></span>Widgets</a></li>
-  <li><a href="calendar.php"><span class="icon color8"><i class="fa fa-calendar-o"></i></span>Calendar<span class="label label-danger">NEW</span></a></li>
-  <li><a href="typography.php"><span class="icon color12"><i class="fa fa-font"></i></span>Typography</a></li>
-  <li><a href="#"><span class="icon color14"><i class="fa fa-paper-plane-o"></i></span>Extra Pages<span class="caret"></span></a>
+  <li><a href="widgets.php"><span class="icon color11-bg"><i class="fa fa-diamond"></i></span>Widgets</a></li>
+  <li><a href="calendar.php"><span class="icon color8-bg"><i class="fa fa-calendar-o"></i></span>التقويم<span class="label label-danger">NEW</span></a></li>
+  <li><a href="typography.php"><span class="icon color12-bg"><i class="fa fa-font"></i></span>الكتابة</a></li>
+  <li><a href="#"><span class="icon color14-bg"><i class="fa fa-paper-plane-o"></i></span>خارجي<span class="caret"></span></a>
     <ul>
       <li><a href="social-profile.php">Social Profile</a></li>
       <li><a href="invoice.php">Invoice<span class="label label-danger">NEW</span></a></li>
@@ -151,11 +161,11 @@
 
 <ul class="sidebar-panel nav">
   <li class="sidetitle">MORE</li>
-  <li><a href="grid.php"><span class="icon color15"><i class="fa fa-columns"></i></span>Grid System</a></li>
-  <li><a href="maps.php"><span class="icon color7"><i class="fa fa-map-marker"></i></span>Maps</a></li>
-  <li><a href="customizable.php"><span class="icon color10"><i class="fa fa-lightbulb-o"></i></span>Customizable</a></li>
-  <li><a href="helper-classes.php"><span class="icon color8"><i class="fa fa-code"></i></span>Helper Classes</a></li>
-  <li><a href="changelogs.php"><span class="icon color12"><i class="fa fa-file-text-o"></i></span>Changelogs</a></li>
+  <li><a href="grid.php"><span class="icon color15-bg"><i class="fa fa-columns"></i></span>تقسيم النظام</a></li>
+  <li><a href="maps.php"><span class="icon color7-bg"><i class="fa fa-map-marker"></i></span>الخرائط</a></li>
+  <li><a href="customizable.php"><span class="icon color10-bg"><i class="fa fa-lightbulb-o"></i></span>Customizable</a></li>
+  <li><a href="helper-classes.php"><span class="icon color8-bg"><i class="fa fa-code"></i></span>الكلاسات المساعدة</a></li>
+  <li><a href="changelogs.php"><span class="icon color12-bg"><i class="fa fa-file-text-o"></i></span>تغير الشعار</a></li>
 </ul>
 
 <div class="sidebar-plan">
