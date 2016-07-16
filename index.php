@@ -8,13 +8,41 @@ require("db/Db.class.php");
 
 $db = new DB();
   $countOfBook = $db->query("SELECT count(*) from `info` limit 1");
-  /*$countOfBooks = $db->query("SELECT count(*) as 'book'FROM  `info`,  `section`, `class`,  `dptmt` WHERE info.`sec-id` = section.`sec-id` AND `section` `class-id` = `class`.`class-id` AND `class`.`dep-id` = `dptmt`.`dep-id` AND `dptmt`.`dep-id` = 1");   */
+
+  $countOfBooks = $db->query("SELECT
+  COUNT(*) as 'count',
+  `dptmt`.`dep-id`
+FROM
+  `info`,
+  `section`,
+  `class`,
+  `dptmt`
+WHERE
+  info.`sec-id` = section.`sec-id` AND `section`.`class-id` = `class`.`class-id` AND `class`.`dep-id` = `dptmt`.`dep-id`
+  GROUP BY `dptmt`.`dep-nm` ORDER BY `dptmt`.`dep-id`");
+
 
   if(isset($countOfBook)){
     $countOfBookInt = $countOfBook[0]["count(*)"];
   }else{
       $countOfBookInt = 0;
   }
+
+
+  // find percentage php
+  $percentage = $countOfBookInt / 100;
+  $n1 = (int) ($countOfBooks[0]['count'] / $percentage);
+  $n2 = (int) ($countOfBooks[1]['count'] / $percentage);
+  $n3 = (int) ($countOfBooks[2]['count'] / $percentage);
+  $n4 = (int) ($countOfBooks[3]['count'] / $percentage);
+  $n5 = (int) ($countOfBooks[4]['count'] / $percentage);
+
+
+
+
+
+
+
 
 ?>
 <!-- START CONTENT -->
@@ -51,33 +79,33 @@ $db = new DB();
   <ul class="topstats clearfix">
     <li class="arrow"></li>
     <li class="col-xs-6 col-lg-2">
-      <span class="title"><i class="fa fa-dot-circle-o"></i> Today Profit</span>
+      <span class="title"><i class="fa fa-dot-circle-o"></i> العدد الكلي</span>
       <h3><?=$countOfBookInt; ?></h3>
       <span class="diff"><b class="color-down"><i class="fa fa-caret-down"></i> 26%</b> from yesterday</span>
     </li>
     <li class="col-xs-6 col-lg-2">
-      <span class="title"><i class="fa fa-calendar-o"></i> This Week</span>
-      <h3>$96.25</h3>
+      <span class="title"><i class="fa fa-book"></i> عدد الكتب</span>
+      <h3><?=$countOfBooks[0]['count']; ?></h3>
       <span class="diff"><b class="color-up"><i class="fa fa-caret-up"></i> 26%</b> from last week</span>
     </li>
     <li class="col-xs-6 col-lg-2">
-      <span class="title"><i class="fa fa-shopping-cart"></i> Total Sales</span>
-      <h3 class="color-up">696</h3>
+      <span class="title"><i class="fa fa-envelope-o"></i> عدد الرسائل</span>
+      <h3 class="color-up"><?=$countOfBooks[1]['count']; ?></h3>
       <span class="diff"><b class="color-up"><i class="fa fa-caret-up"></i> 26%</b> from last month</span>
     </li>
     <li class="col-xs-6 col-lg-2">
-      <span class="title"><i class="fa fa-users"></i> Visitors</span>
-      <h3>960</h3>
+      <span class="title"><i class="fa fa-th"></i> الموسوعات</span>
+      <h3><?=$countOfBooks[2]['count']; ?></h3>
       <span class="diff"><b class="color-down"><i class="fa fa-caret-down"></i> 26%</b> from yesterday</span>
     </li>
     <li class="col-xs-6 col-lg-2">
-      <span class="title"><i class="fa fa-eye"></i> Page View</span>
-      <h3 class="color-up">46.230</h3>
+      <span class="title"><i class="fa fa-newspaper-o"></i> المجلات</span>
+      <h3 class="color-up"><?=$countOfBooks[3]['count']; ?></h3>
       <span class="diff"><b class="color-down"><i class="fa fa-caret-down"></i> 26%</b> from yesterday</span>
     </li>
     <li class="col-xs-6 col-lg-2">
-      <span class="title"><i class="fa fa-clock-o"></i> Avarage Time</span>
-      <h3 class="color-down">2:10<small>min</small></h3>
+      <span class="title"><i class="fa fa-eye"></i> الكتب السماوية والمتون والمعاجم</span>
+      <h3 class="color-down"><?=$countOfBooks[4]['count']; ?></h3>
       <span class="diff"><b class="color-up"><i class="fa fa-caret-up"></i> 26%</b> from last week</span>
     </li>
   </ul>
@@ -112,7 +140,6 @@ $db = new DB();
       </div>
     </div>
     <!-- End Chart Daily -->
-
 
     <!-- Start Files -->
     <div class="col-md-12 col-lg-5">
@@ -259,17 +286,17 @@ $db = new DB();
     <!-- Start General Stats -->
     <div class="col-md-12 col-lg-6">
       <div class="panel panel-widget" style="height:205px;">
-        <div class="panel-title">
-          General Stats
+        <div class="panel-title" style="text-align:center">
+          أحصائيات عامة
         </div>
         <div class="panel-body">
 
-          <div class="easypie margin-b-50" data-percent="82"><span>82%</span>New Visit</div>
-          <div class="easypie margin-b-50" data-percent="30"><span>30%</span>Order</div>
-          <div class="easypie margin-b-50 margin-b-40" data-percent="62"><span>62%</span>Page View</div>
-          <div class="easypie margin-b-50" data-percent="15"><span>15%</span>Client</div>
-          <div class="easypie margin-b-50" data-percent="45"><span>45%</span>Storage</div>
-          <div class="easypie margin-b-50" data-percent="75"><span>76%</span>Comments</div>
+          <div class="easypie margin-b-50" data-percent="100"><span>100%</span>المكتبة</div>
+          <div class="easypie margin-b-50" data-percent=<?=$n1?>><span><?=$n1?>%</span>الكتب</div>
+          <div class="easypie margin-b-50 margin-b-40" data-percent=<?=$n2?>><span><?=$n2?>%</span>الرسائل</div>
+          <div class="easypie margin-b-50" data-percent=<?=$n3?>><span><?=$n3?>%</span>الموسوعات</div>
+          <div class="easypie margin-b-50" data-percent=<?=$n4?>><span><?=$n4?>%</span>المجلات</div>
+          <div class="easypie margin-b-50" data-percent=<?=$n5?>><span><?=$n5?>%</span>الكتب المقدسة</div>
 
         </div>
       </div>
