@@ -127,23 +127,47 @@ echo "ok";
     </ul>
   </li>
   <li><a href="charts.php"><span class="icon color8-bg"><i class="fa fa-bar-chart"></i></span>الرسومات</a></li>
-  <li><a href="#"><span class="icon color9-bg"><i class="fa fa-th"></i></span>الجداول<span class="caret"></span></a>
+  <li><a href="#"><span class="icon color9-bg"><i class="fa fa-th"></i></span>الكل<span class="caret"></span></a>
     <ul>
       <li><a href="basic-table.php">Basic Tables</a></li>
       <li><a href="data-table.php">Data Tables</a></li>
     </ul>
   </li>
-  <li><a href="#"><span class="icon color10-bg"><i class="fa fa-check-square-o"></i></span>النماذج<span class="caret"></span></a>
+   <li><a href="#"><span class="icon color10-bg"><i class="fa fa-book"></i></span>الكتب<span class="caret"></span></a>
+    <ul>
+      <li><a href="basic-table.php">Basic Tables</a></li>
+      <li><a href="book.php">Data Tables</a></li>
+    </ul>
+  </li>
+   <li><a href="#"><span class="icon color11-bg"><i class="fa fa-envelope-o"></i></span>الرسائل<span class="caret"></span></a>
+    <ul>
+      <li><a href="basic-table.php">Basic Tables</a></li>
+      <li><a href="message.php">Data Tables</a></li>
+    </ul>
+  </li>
+     <li><a href="#"><span class="icon color12-bg"><i class="fa fa-th"></i></span>الموسوعات<span class="caret"></span></a>
+    <ul>
+      <li><a href="basic-table.php">Basic Tables</a></li>
+      <li><a href="message.php">Data Tables</a></li>
+    </ul>
+  </li>
+    <li><a href="#"><span class="icon color2-bg"><i class="fa fa-newspaper-o"></i></span>المجلات<span class="caret"></span></a>
+    <ul>
+      <li><a href="basic-table.php">Basic Tables</a></li>
+      <li><a href="message.php">Data Tables</a></li>
+    </ul>
+  </li>
+  <li><a href="#"><span class="icon color13-bg"><i class="fa fa-check-square-o"></i></span>النماذج<span class="caret"></span></a>
     <ul>
       <li><a href="form-elements.php">Form Elements</a></li>
       <li><a href="layouts.php">Form Layouts</a></li>
       <li><a href="text-editors.php">Text Editors</a></li>
     </ul>
   </li>
-  <li><a href="widgets.php"><span class="icon color11-bg"><i class="fa fa-diamond"></i></span>Widgets</a></li>
+  <li><a href="widgets.php"><span class="icon color14-bg"><i class="fa fa-diamond"></i></span>Widgets</a></li>
   <li><a href="calendar.php"><span class="icon color8-bg"><i class="fa fa-calendar-o"></i></span>التقويم<span class="label label-danger">NEW</span></a></li>
-  <li><a href="typography.php"><span class="icon color12-bg"><i class="fa fa-font"></i></span>الكتابة</a></li>
-  <li><a href="#"><span class="icon color14-bg"><i class="fa fa-paper-plane-o"></i></span>خارجي<span class="caret"></span></a>
+  <li><a href="typography.php"><span class="icon color15-bg"><i class="fa fa-font"></i></span>الكتابة</a></li>
+  <li><a href="#"><span class="icon color16-bg"><i class="fa fa-paper-plane-o"></i></span>خارجي<span class="caret"></span></a>
     <ul>
       <li><a href="social-profile.php">Social Profile</a></li>
       <li><a href="invoice.php">Invoice<span class="label label-danger">NEW</span></a></li>

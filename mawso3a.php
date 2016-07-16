@@ -77,8 +77,6 @@ require("include/header.php");
 					        <th>المنتج</th>
 					        <th>نوع المنتج</th>
 					        <th>سعر المنتج</th>
-					        <th>سعر المنتج</th>
-					        <th>سعر المنتج</th>
 					        <th>الكمية المرادة</th>
 
                     </tr>
@@ -95,8 +93,6 @@ require("include/header.php");
 					        <th>المنتج</th>
 					        <th>نوع المنتج</th>
 					        <th>سعر المنتج</th>
-					        <th>الكمية المتبقية</th>
-					        <th>الكمية المتبقية</th>
 					        <th>الكمية المتبقية</th>
 
                     </tr>
@@ -121,9 +117,7 @@ require("include/header.php");
         <td>'. $info[$j]["cnum"] .'</td>
           <td>'. $info[$j]["info-id"]  .'</td>
              <td>'. $info[$j]["sec-id"]  .'</td>
-              <td>'. $info[$j]["year"] .'</td>
-              <td>'. $info[$j]["year"] .'</td>
-              <td>'. $info[$j]["year"] .'</td>
+              <td>'. $info[$j]["bookcod"] .'</td>
 
     </tr>
     ';
